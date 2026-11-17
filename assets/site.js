@@ -45,7 +45,7 @@ function markdown(raw){
  const lines=raw.replace(/\r\n/g,'\n').split('\n'),out=[];let para=[],list='',quote=[],code=[],fenced=false;
  function flush(){if(para.length){out.push('<p>'+inline(para.join(' '))+'</p>');para=[];}if(list){out.push('</'+list+'>');list='';}if(quote.length){out.push('<blockquote>'+inline(quote.join(' '))+'</blockquote>');quote=[];}}
  for(const line of lines){const s=line.trim();if(/^\x60{3}/.test(s)){if(fenced){out.push('<pre><code>'+esc(code.join('\n'))+'</code></pre>');code=[];fenced=false;}else{flush();fenced=true;}continue;}if(fenced){code.push(line);continue;}if(!s){flush();continue;}
- const h=/^(#{1,3})\s+(.+)$/.exec(s);if(h){flush();const n=h[1].length+1,id=h[2].toLowerCase().replace(/[^a-z0-9 -]/g,'').replace(/\s+/g,'-');out.push('<h'+n+' id="'+id+'">'+inline(h[2])+'</h'+n+'>');continue;}
+ const h=/^(#{1,3})\s+(.+)$/.exec(s);if(h){flush();const n=h[1].length,id=h[2].toLowerCase().replace(/[^a-z0-9 -]/g,'').replace(/\s+/g,'-');out.push('<h'+n+' id="'+id+'">'+inline(h[2])+'</h'+n+'>');continue;}
  if(/^---+$/.test(s)){flush();out.push('<hr>');continue;}
  if(/^>\s?/.test(s)){if(para.length||list)flush();quote.push(s.replace(/^>\s?/,''));continue;}
  if(quote.length)flush();
