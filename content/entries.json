@@ -1,0 +1,115 @@
+[
+  {
+    "id": "from-image-to-cell",
+    "title": "From Image to Cell",
+    "category": "Geometry",
+    "date": "2026-11",
+    "kind": "Concept study",
+    "summary": "An image-guided Voronoi mosaic, an invertible spatial twist, and an important distinction between the two.",
+    "tags": [
+      "Voronoi",
+      "image sampling",
+      "spatial warp"
+    ],
+    "art": "voronoi",
+    "file": "from-image-to-cell.md",
+    "related": [
+      "adaptive-attention",
+      "inversion-field"
+    ]
+  },
+  {
+    "id": "adaptive-attention",
+    "title": "Adaptive Attention, Cell by Cell",
+    "category": "Systems",
+    "date": "2026-11",
+    "kind": "Research sketch",
+    "summary": "A separate experiment in query-dependent cell summaries, scoring, and allocation of a limited attention budget.",
+    "tags": [
+      "attention",
+      "adaptive refinement",
+      "query"
+    ],
+    "art": "attention",
+    "file": "adaptive-attention.md",
+    "related": [
+      "from-image-to-cell"
+    ]
+  },
+  {
+    "id": "spiral-julia",
+    "title": "Spiral Julia",
+    "category": "Visual studies",
+    "date": "2026-11",
+    "kind": "Visual study",
+    "summary": "Complex dynamics as a compositional material: iteration, structure, and a spiral-like visual language.",
+    "tags": [
+      "complex dynamics",
+      "fractal",
+      "Julia sets"
+    ],
+    "art": "julia",
+    "file": "spiral-julia.md",
+    "related": [
+      "inversion-field",
+      "wild-silk"
+    ]
+  },
+  {
+    "id": "inversion-field",
+    "title": "Inversion Field",
+    "category": "Geometry",
+    "date": "2026-10",
+    "kind": "Visual experiment",
+    "summary": "A prismatic tunnel investigating repetition, changing perspective, and continuous geometric transformation.",
+    "tags": [
+      "geometry",
+      "projection",
+      "motion"
+    ],
+    "art": "inversion",
+    "file": "inversion-field.md",
+    "related": [
+      "spiral-julia",
+      "from-image-to-cell"
+    ]
+  },
+  {
+    "id": "cathedral-of-forms",
+    "title": "Cathedral of Forms",
+    "category": "Worlds",
+    "date": "2026-10",
+    "kind": "World study",
+    "summary": "Recursive architecture, suspended structures, and a slow journey through a luminous mathematical space.",
+    "tags": [
+      "architecture",
+      "recursive forms",
+      "3D"
+    ],
+    "art": "cathedral",
+    "file": "cathedral-of-forms.md",
+    "related": [
+      "inversion-field",
+      "wild-silk"
+    ]
+  },
+  {
+    "id": "wild-silk",
+    "title": "Wild Silk",
+    "category": "Visual studies",
+    "date": "2026-11",
+    "kind": "Visual experiment",
+    "summary": "Seeded generative linework and parameter trajectories; a study in visual search and variation.",
+    "tags": [
+      "generative art",
+      "seeds",
+      "parameter cycles"
+    ],
+    "art": "silk",
+    "file": "wild-silk.md",
+    "related": [
+      "spiral-julia",
+      "cathedral-of-forms"
+    ]
+  }
+]
